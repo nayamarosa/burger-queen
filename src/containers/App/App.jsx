@@ -8,6 +8,8 @@ import Allday from './components/Allday'
 import Kitchen from './pages/Kitchen'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
+import './App.scss';
+
 
 class App extends React.Component {
   constructor(props) {
