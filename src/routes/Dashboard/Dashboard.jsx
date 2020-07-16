@@ -1,9 +1,7 @@
 import React from 'react';
-// import DashboardHeader from '../components/DashboardHeader';
-import Saloon from '../pages/Saloon'
-import Kitchen from '../pages/Kitchen'
-// import '../components/Components.css'
-import './Menu.css'
+
+import Saloon from '../Saloon';
+import Kitchen from '../Kitchen';
 
 class Dashboard extends React.Component{
   constructor(props) {
