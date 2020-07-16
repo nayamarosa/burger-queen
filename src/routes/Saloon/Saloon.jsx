@@ -5,13 +5,13 @@ import React from 'react';
 // import '../components/Components.css';
 
 function Saloon() {
-    
-    return (
-        <>
-        {/* <SaloonAside/> */}
-        {/* <GetOrder/> */}
-        </>
-        )
-    }
-    
-    export default Saloon;
+  
+  return (
+    <>
+    {/* <SaloonAside/> */}
+    {/* <GetOrder/> */}
+    </>
+    )
+  }
+  
+  export default Saloon;
