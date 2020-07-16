@@ -1,11 +1,11 @@
 import React from 'react';
-import Dashboard from './pages/Dashboard'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import Saloon from './pages/Saloon'
-import Breakfast from './components/Breakfast'
-import Allday from './components/Allday'
-import Kitchen from './pages/Kitchen'
+import Dashboard from '../../pages/Dashboard'
+import Login from '../../pages/Login'
+import Register from '../../pages/Register'
+import Saloon from '../../pages/Saloon'
+import BreakfastList from '../BreakfastList'
+import AlldayList from '../AlldayList'
+import Kitchen from '../../pages/Kitchen'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import './App.scss';
@@ -25,8 +25,8 @@ class App extends React.Component {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/saloon" component={Saloon} />
-        <Route path="/breakfast" component={Breakfast} />
-        <Route path="/allday" component={Allday} />
+        <Route path="/breakfast" component={BreakfastList} />
+        <Route path="/allday" component={AlldayList} />
         <Route path="/kitchen" component={Kitchen} />
       </div>
       </Router>

@@ -1,3 +1,3 @@
-import Allday from './Allday';
+import AlldayList from './AlldayList';
 
-export default Allday;
+export default AlldayList;

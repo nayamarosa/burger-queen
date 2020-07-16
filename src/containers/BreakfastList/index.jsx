@@ -1,3 +1,3 @@
-import Breakfast from './Breakfast';
+import BreakfastList from './BreakfastList';
 
-export default Breakfast;
+export default BreakfastList;

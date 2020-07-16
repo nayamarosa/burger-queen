@@ -4,7 +4,7 @@ import withFirebaseAuth from 'react-with-firebase-auth';
 // import InitialHeader from '../components/InicialHeader';
 // import Input from '../components/Input';
 // import Button from '../components/Button';
-import '../components/Components.css'
+// import '../components/Components.css'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import Header from '../components/Header';

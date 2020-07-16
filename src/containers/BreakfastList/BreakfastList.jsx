@@ -1,9 +1,9 @@
 import React from 'react';
-import breakfast from '../components/breakfast.json';
-import '../components/Components.css'
+import breakfast from '../../components/breakfast.json';
+// import '../components/Components.css'
 // import Input from '../components/Input';
-import Button from '../components/Button';
-import { getProduct } from '../components/GetOrder';
+// import Button from '../components/Button';
+import { getProduct } from '../../components/GetOrder';
 
 
 class Breakfast extends React.Component{
@@ -79,7 +79,7 @@ class Breakfast extends React.Component{
           <h3>R$ {product.price},00</h3>
           </section>
           {/* select de quantidade */}
-          <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/>
+          {/* <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/> */}
           </li>
         })
       }

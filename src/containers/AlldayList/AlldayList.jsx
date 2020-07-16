@@ -1,12 +1,12 @@
 import React from 'react';
-import allDay from '../components/allday.json';
-import '../components/Components.css'
+import allDay from '../../components/allday.json';
+// import '../components/Components.css'
 // import Input from '../components/Input';
-import Button from '../components/Button';
-import { getProduct } from '../components/GetOrder';
+// import Button from '../components/Button';
+import { getProduct } from '../../components/GetOrder';
 
 
-class Allday extends React.Component{
+class AlldayList extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
@@ -79,7 +79,7 @@ class Allday extends React.Component{
           {/* select de quantidade */}
           {/* tipo */}
           </section>
-          <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/>
+          {/* <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/> */}
           </li>
         })
       }
@@ -91,7 +91,7 @@ class Allday extends React.Component{
           return  <li className="Item-burger-type" key={i}>
           <h3>{product.item}</h3>
           {/* select de qual */}
-          <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/>
+          {/* <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/> */}
           </li>
         })
       }
@@ -107,7 +107,7 @@ class Allday extends React.Component{
           <h3>R$ {product.price},00</h3>
           {/* select de quantidade */}
           </section>
-          <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/>
+          {/* <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/> */}
           </li>
         })
       }
@@ -122,7 +122,7 @@ class Allday extends React.Component{
           <h3>R$ {product.price},00</h3>
           {/* select de quantidade */}
           </section>
-          <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/>
+          {/* <Button className="Button-add" text="Adicionar" onClick={this.getProductClick}/> */}
           </li>
         })
       }
@@ -153,6 +153,6 @@ class Allday extends React.Component{
     }
   }
   
-  export default Allday;
+  export default AlldayList;
   
   
