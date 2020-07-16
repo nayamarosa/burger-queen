@@ -1,5 +1,5 @@
 import React from 'react';
-import firebase from '../firebaseConfig';
+import firebase from '../../firebaseConfig';
 import withFirebaseAuth from 'react-with-firebase-auth';
 import Button from '../Button';
 import Logo from '../Logo';
