@@ -1,0 +1,51 @@
+input[type=radio]:checked + .Toggle span {
+  right: 4px;
+  background-color: black; 
+}
+
+.align-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.saloon-order {
+  order: 1;
+}
+
+.toggle-order {
+  order: 2;
+}
+
+.kitchen-order {
+  order: 3;
+}
+
+.radio-toggle {
+  position: absolute;
+}
+
+.toggle {
+  height: 34px;
+  width: 60px;
+  padding: 4px;
+  margin: 0 20px 0;
+  display: flex;
+  position: relative;
+  background-color: white;
+  box-sizing: border-box;
+  border: 1px solid #707070;
+  border-radius: 50px;
+}
+
+.toggle span {
+  height: 24px;
+  width: 24px;
+  right: 30px;
+  display: block;
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import firebase from '../firebaseConfig';
 import withFirebaseAuth from 'react-with-firebase-auth';
-import InitialHeader from '../components/InicialHeader';
+// import InitialHeader from '../components/InicialHeader';
 import Input from '../components/Input';
 import Toggle from '../components/Toggle'
 import Button from '../components/Button';
@@ -49,7 +49,7 @@ class Register extends React.Component{
     render() {
         return (
             <>
-                <InitialHeader />
+                {/* <InitialHeader /> */}
                 <section className="Align">
                     <form className="Login-register-form">
                         <h4>Faça seu cadastro</h4>
