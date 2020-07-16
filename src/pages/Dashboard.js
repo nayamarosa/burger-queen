@@ -1,5 +1,5 @@
 import React from 'react';
-import DashboardHeader from '../components/DashboardHeader';
+// import DashboardHeader from '../components/DashboardHeader';
 import Saloon from '../pages/Saloon'
 import Kitchen from '../pages/Kitchen'
 import '../components/Components.css'
@@ -27,7 +27,7 @@ class Dashboard extends React.Component{
         
         return (
             <>
-                <DashboardHeader />
+                {/* <DashboardHeader /> */}
 
                 {pageType}
             </>

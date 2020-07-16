@@ -1,11 +1,17 @@
 import React from 'react';
 import firebase from '../firebaseConfig';
 import withFirebaseAuth from 'react-with-firebase-auth';
-import InitialHeader from '../components/InicialHeader';
-import Input from '../components/Input';
-import Button from '../components/Button';
+// import InitialHeader from '../components/InicialHeader';
+// import Input from '../components/Input';
+// import Button from '../components/Button';
 import '../components/Components.css'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+
+import Header from '../components/Header';
+import Logo from '../components/Logo';
+import Button from '../components/Button';
+import Input from '../components/Input';
+import Toggle from '../components/Toggle';
 
 const firebaseAppAuth = firebase.auth();
 const database = firebase.firestore();
@@ -48,7 +54,21 @@ class Login extends React.Component{
     render() {
         return (
             <div>
-                <InitialHeader />
+                <Header />
+                <Logo />
+                <Input 
+                    type="email" 
+                    placeholder="E-mail"
+                />
+                <Input 
+                    type="password" 
+                    placeholder="Senha"
+                />
+                <Button 
+                    text="Entrar"
+                />
+                <Toggle />
+                {/* <InitialHeader />
                 <section className="Align">
                     <form className="Login-register-form">
                         <h4>Faça seu login</h4>
@@ -63,7 +83,7 @@ class Login extends React.Component{
                         <Button  className="Button" text="Entrar" onClick={this.signIn}/>
                         <Link to="register" className="Link">Não tem conta? Cadastre-se</Link>
                     </div>
-                </section>
+                </section> */}
             </div>
                 )
         }
