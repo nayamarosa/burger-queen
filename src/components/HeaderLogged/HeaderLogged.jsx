@@ -1,10 +1,11 @@
 import React from 'react';
 import firebase from '../../firebaseConfig';
 import withFirebaseAuth from 'react-with-firebase-auth';
+
 import Button from '../Button';
 import Logo from '../Logo';
 
-import './HeaderLogged.scss';
+import '../Header/Header.scss';
 
 const firebaseAppAuth = firebase.auth();
 
@@ -20,10 +21,18 @@ class HeaderLogged extends React.Component{
   
   render (){
     return (
-      <header className="align-dashboard-header">
-        <p className="person-name">{sessionStorage.getItem('name')}</p>
-        <Logo className="logo-dashboard-header"/>
-        <Button className="sign-out" text="Sair" onClick={this.signOut} />
+      <header className="header header__logged">
+        <div className="container">
+          {/* <p className="person-name">{sessionStorage.getItem('name')}</p> */}
+          <p className="header__logged-name">Nayama</p>
+          <Logo className="logo__logged"/>
+          <Button 
+            className="btn__sign-out" 
+            // icon="fas fa-sign-out-alt" 
+            text="Sair" 
+            onClick={this.signOut} 
+          />
+        </div>
       </header>
     );
   }

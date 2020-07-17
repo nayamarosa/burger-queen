@@ -1,14 +1,11 @@
 import React from 'react';
-import Breakfast from './Breakfast';
-import Allday from './Allday';
-import Button from './Button';
-import breakfastImg from '../images/breakfast.png';
-import alldayImg from '../images/allday.png';
-import orderImg from '../images/order.png';
+import Breakfast from '../../containers/BreakfastList';
+import Allday from '../../containers/AlldayList';
+import Button from '../Button';
 
 import './AsideMenu.scss';
 
-class SaloonAside extends React.Component{
+class AsideMenu extends React.Component{
   constructor(props) {
     super(props);
     this.props = props;
@@ -38,22 +35,16 @@ class SaloonAside extends React.Component{
   }
   
   render (){
-    
+
     return (
-      
-      <>
-      <section className="align-menu-options">
-      <aside className="align-aside">
-      <Button className="aside-button" name={breakfastImg} text ="CAFÉ DA MANHÃ" onClick={(e) => this.handleMenuClick(e, "text")} id="breakfast"/>
-      <Button className="aside-button" name={alldayImg} text ="ALMOÇO E JANTAR" onClick={(e) => this.handleMenuClick(e, "text")} id="allday"/>
-      <Button className="aside-button" name={orderImg} text ="MEUS PEDIDOS" onClick={(e) => this.handleMenuClick(e, "text")} id="order"/>
+      <aside className="aside-menu">
+        <Button className="btn__aside" icon={`btn__aside-icon ${this.props.firstIcon}`} text={this.props.textFirstButton} onClick={(e) => this.handleMenuClick(e, "text")} id="breakfast"/>
+        <Button className="btn__aside" icon={`btn__aside-icon ${this.props.secondIcon}`} text={this.props.textSecondButton} onClick={(e) => this.handleMenuClick(e, "text")} id="allday"/>
+        <Button className="btn__aside" icon={`btn__aside-icon ${this.props.thirdIcon}`} text={this.props.textThirdButton} onClick={(e) => this.handleMenuClick(e, "text")} id="order"/>
+        <Button className="btn__aside" icon={`btn__aside-icon ${this.props.fourthIcon}`} text={this.props.textFourthButton} onClick={(e) => this.handleMenuClick(e, "text")} id="order"/>
       </aside>
-      <section className="menu-position">{this.state.text}</section>
-      </section>
-      </>
       )
-      
     }
   }
   
-  export default SaloonAside;
+  export default AsideMenu;

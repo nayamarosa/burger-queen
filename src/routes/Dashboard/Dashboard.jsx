@@ -13,7 +13,7 @@ class Dashboard extends React.Component{
       sessionStorage.getItem('name');
       sessionStorage.getItem('type');        
     } else{
-      this.props.history.push('/Login');
+      this.props.history.push('/login');
     }
     
     

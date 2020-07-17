@@ -5,6 +5,9 @@ import allDay from '../../components/allday.json';
 // import Button from '../components/Button';
 import { getProduct } from '../../components/GetOrder';
 
+import AlldayItem from '../../components/AlldayItem';
+import BreakfastItem from '../../components/BreakfastItem';
+
 
 class AlldayList extends React.Component{
   constructor(props) {

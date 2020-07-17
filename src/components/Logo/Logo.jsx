@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Logo = () => {
+import './Logo.scss';
+
+const Logo = (props) => {
   return (
-    <img src="./logo.png" alt="Logo Burger Queen" className="logo" />
+    <img src="./logo.png" alt="Logo Burger Queen" className={props.className} />
   )
 }
   

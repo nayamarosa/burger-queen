@@ -5,6 +5,8 @@ import Button from '../../components/Button';
 import Input from '../../components/Input';
 import Toggle from '../../components/Toggle';
 
+import './Login.scss';
+
 import firebase from '../../firebaseConfig';
 import withFirebaseAuth from 'react-with-firebase-auth';
 
@@ -48,37 +50,26 @@ class Login extends React.Component{
   
   render() {
     return (
-      <div>
-      <Logo />
-      <Input 
-      type="email" 
-      placeholder="E-mail"
-      />
-      <Input 
-      type="password" 
-      placeholder="Senha"
-      />
-      <Button 
-      text="Entrar"
-      />
-      <Toggle />
-      {/* <InitialHeader />
-        <section className="Align">
-        <form className="Login-register-form">
-        <h4>Faça seu login</h4>
-        <Input type="email" placeholder="E-mail" onChange={(e) => this.handleChange(e, "email")} value={this.props.email}/>
-        <Input type="password" placeholder="Senha" onChange={(e) => this.handleChange(e, "password")} value={this.props.password}/>
+      <section className="login">
+        <Logo className="logo"/>
+        <form className="login__form">
+          <p>Faça seu login</p>
+          <Input 
+            className="input__login"
+            type="email" 
+            placeholder="E-mail"
+          />
+          <Input 
+            className="input__login"
+            type="password" 
+            placeholder="Senha"
+          />
+          <Button 
+            className="btn__login"
+            text="Entrar"
+          />
         </form>
-        <div className="Align-beside">
-        <p>Mantenha-me conectado</p>
-        <p>Esqueci minha senha</p>
-        </div>
-        <div  className="Align">
-        <Button  className="Button" text="Entrar" onClick={this.signIn}/>
-        <Link to="register" className="Link">Não tem conta? Cadastre-se</Link>
-        </div>
-      </section> */}
-      </div>
+      </section>
       )
     }
   }

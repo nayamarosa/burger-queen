@@ -1,8 +1,7 @@
 .logo {
-  margin-top: 50px;
   width: 40%;
-}
-
-.logo-dashboard-header {
-  width: 15%;
+  
+  &__logged {
+    width: 60px;
+  }
 }
