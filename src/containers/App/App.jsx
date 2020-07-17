@@ -1,28 +1,16 @@
 import React from 'react';
-// import Header from '../../components/Header'
-import HeaderLooged from '../../components/HeaderLogged';
-import AsideMenu from '../../components/AsideMenu';
-
 import { BrowserRouter } from 'react-router-dom';
 import Routes from '../../routes';
+import { MenuProvider } from '../Context';
 
 import './App.scss';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <BrowserRouter className="App">
-        {/* <Header /> */}
-        <HeaderLooged />
-        <Routes />
-      </BrowserRouter>
-    );
-  }
-}
+const App = () => (
+  <MenuProvider>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  </MenuProvider>
+);
 
 export default App;
