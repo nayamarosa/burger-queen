@@ -1,5 +1,7 @@
 import React from 'react';
 
+import AsideMenu from '../../components/AsideMenu';
+
 class Kitchen extends React.Component{
   constructor(props) {
     super(props);
@@ -8,9 +10,21 @@ class Kitchen extends React.Component{
   
   render() {
     return (
-      <h1>Cozinha</h1>
-      )
-    }
+      <AsideMenu 
+        firstIcon="fas fa-concierge-bell"
+        textFirstButton="Novos pedidos"
+        
+        secondIcon="fas fa-clock"
+        textSecondButton="Pedidos em andamento"
+        
+        thirdIcon="fas fa-clipboard-check"
+        textThirdButton="Pedidos prontos"
+        
+        fourthIcon="fas fa-clipboard-list"
+        textFourthButton="Todos os pedidos"
+      />
+    )
   }
-  
-  export default Kitchen;
+}
+
+export default Kitchen;

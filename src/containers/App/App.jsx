@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header'
-// import HeaderLooged from '../../components/HeaderLogged';
+// import Header from '../../components/Header'
+import HeaderLooged from '../../components/HeaderLogged';
+import AsideMenu from '../../components/AsideMenu';
 
 import { BrowserRouter } from 'react-router-dom';
 import Routes from '../../routes';
@@ -16,8 +17,8 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter className="App">
-        <Header />
-        {/* <HeaderLooged /> */}
+        {/* <Header /> */}
+        <HeaderLooged />
         <Routes />
       </BrowserRouter>
     );

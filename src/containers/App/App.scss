@@ -11,6 +11,13 @@ body {
   height: 100vh;
 }
 
+.container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 // .Align h4{
 //   text-align: center;
