@@ -51,7 +51,7 @@ class Login extends React.Component{
   render() {
     return (
       <section className="login">
-        <Logo />
+        <Logo className="logo"/>
         <form className="login__form">
           <p>Faça seu login</p>
           <Input 

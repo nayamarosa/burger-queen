@@ -5,7 +5,7 @@ import './Header.scss';
 const Header = (props) => {
   return (
     <header className="header">
-      <p>SISTEMA INTERNO DE PEDIDOS</p>
+      <p className="header-text">SISTEMA INTERNO DE PEDIDOS</p>
     </header>
   )
 }
