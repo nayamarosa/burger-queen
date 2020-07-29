@@ -3,8 +3,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { MenuContext } from '../../containers/Context';
 import HeaderLogged from '../../components/HeaderLogged';
 import AsideMenu from '../../components/AsideMenu';
-import BreakfastList from '../../containers/BreakfastList';
-import AlldayList from '../../containers/AlldayList';
+import OrderList from '../../containers/OrderList';
+// import AlldayList from '../../containers/AlldayList';
 
 const Saloon = () => {
   const menu = useContext(MenuContext);
@@ -13,15 +13,11 @@ const Saloon = () => {
   const [menuAlldayList, setMenuAlldayList] = useState([]);
 
   useEffect(() => {
-    let breakfastList = menu.filter(item =>  
-      item.breakfast
-    )
-    setMenuBreakfastList(breakfastList)
+    let breakfastList = menu[0];
+    setMenuBreakfastList(breakfastList);
 
-    let alldayList = menu.filter(item =>  
-      item.allday
-    )
-    setMenuAlldayList(alldayList)
+    let alldayList = menu[1];
+    setMenuAlldayList(alldayList);
   }, [menu]);
   
   const handleMenuFilter = (e) => {
@@ -40,9 +36,9 @@ const Saloon = () => {
   const renderSwitch = (param) => {
     switch(param !== null) {
       case param.textContent === "Café da manhã":
-        return <BreakfastList menu={menuBreakfastList}/>;
+        return menuBreakfastList.breakfast !== undefined ? <OrderList menu={menuBreakfastList.breakfast}/> : false;
       case param.textContent === "Almoço e Jantar":
-        return <AlldayList menu={menuAlldayList}/>;
+        return menuBreakfastList.breakfast !== undefined ? <OrderList menu={menuAlldayList.allday}/> : false;
       case param.textContent === "Pedidos prontos":
         return param.textContent;
       case param.textContent === "Meus pedidos":
