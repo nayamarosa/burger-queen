@@ -6,7 +6,7 @@ import withFirebaseAuth from 'react-with-firebase-auth';
 // import Toggle from '../components/Toggle'
 // import Button from '../components/Button';
 // import '../components/Components.css'
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Link} from 'react-router-dom';
 
 const firebaseAppAuth = firebase.auth();
 const database = firebase.firestore();

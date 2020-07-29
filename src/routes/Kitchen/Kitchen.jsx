@@ -1,30 +1,28 @@
 import React from 'react';
 
+import HeaderLogged from '../../components/HeaderLogged';
 import AsideMenu from '../../components/AsideMenu';
 
-class Kitchen extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {}
-  }
+const Kitchen = () => {
   
-  render() {
-    return (
-      <AsideMenu 
-        firstIcon="fas fa-concierge-bell"
-        textFirstButton="Novos pedidos"
-        
-        secondIcon="fas fa-clock"
-        textSecondButton="Pedidos em andamento"
-        
-        thirdIcon="fas fa-clipboard-check"
-        textThirdButton="Pedidos prontos"
-        
-        fourthIcon="fas fa-clipboard-list"
-        textFourthButton="Todos os pedidos"
-      />
+  return (
+    <>
+    <HeaderLogged />
+    <AsideMenu 
+      firstIcon="fas fa-concierge-bell"
+      textFirstButton="Novos pedidos"
+      
+      secondIcon="fas fa-clock"
+      textSecondButton="Pedidos em andamento"
+      
+      thirdIcon="fas fa-clipboard-check"
+      textThirdButton="Pedidos prontos"
+      
+      fourthIcon="fas fa-clipboard-list"
+      textFourthButton="Todos os pedidos"
+    />
+    </>
     )
   }
-}
-
-export default Kitchen;
+  
+  export default Kitchen;

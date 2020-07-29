@@ -1,6 +1,5 @@
 import React from 'react';
-import Breakfast from '../../containers/BreakfastList';
-import Allday from '../../containers/AlldayList';
+
 import Button from '../Button';
 
 import './AsideMenu.scss';
